@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  line-height: 1.5;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  border-left: 4px solid #0077cc;
+  padding-left: 16px;
+}
+.header-info {
+  flex: 1;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.contacts {
+  list-style: none;
+  padding: 0;
+}
+.contacts li {
+  margin-bottom: 10px;
+}
+
+.contacts a {
+  color: #333;
+  font-weight: bold;
+  transition: color 0.2s ease;
+  display: inline-block;
+  padding: 4px 0;
+  border-bottom: 1px solid transparent;
+}
+.contacts a:hover {
+  color: #0077cc;
+  border-bottom-color: #0077cc;
+}
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+p {
+  color: #444;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.job-title {
+  font-size: 18px;
+  color: #777;
+  margin: 0;
+  font-weight: 500;
+}
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #0077cc;
+  font-weight: 600;
+}
+.skills {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.skills li {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+  border: 1px solid #eee;
+  position: relative;
+}
+.skills li:hover {
+  transform: translateX(5px);
+}
+.skills li span {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 0;
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+.skills li:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+.skills li span::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  border: 6px solid transparent;
+  border-top-color: #333;
+}
+.container {
+  margin: 20px auto;
+  transition: box-shadow 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  background-color: white;
+  padding: 20px 40px 20px 40px;
+}
+.container:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
+}
+section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-top: 5px;
+}
+.qualities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.qualities span {
+  padding: 8px 14px;
+  background-color: #eef6fc;
+  color: #0077cc;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+.qualities span:hover {
+  transform: translateY(-2px);
+  background-color: #dceffc;
+}
+.experience,
+.education {
+  padding: 15px 20px;
+  border-left: 4px solid #0077cc;
+  background-color: #f8f8f8;
+  border-radius: 0 8px 8px 0;
+}
+
+.experience,
+.education {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.experience:hover,
+.education:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.experience h3 {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 20px;
+}
+.experience .date {
+  margin: 0 0 10px;
+  color: #777;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+}
+.experience p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .container {
+    padding: 20px 16px;
+  }
+  .skills {
+    grid-template-columns: 1fr;
+  }
+  .skills li span {
+    white-space: normal;
+    max-width: 250px;
+  }
+}
