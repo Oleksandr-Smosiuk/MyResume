@@ -4,7 +4,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: #f5f5f5;
+  background-color: #202020;
   line-height: 1.5;
 }
 header {
@@ -12,7 +12,7 @@ header {
   align-items: center;
   gap: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #3a3a3a;
   margin-bottom: 30px;
   border-left: 4px solid #0077cc;
   padding-left: 16px;
@@ -35,7 +35,7 @@ a:hover {
 }
 
 .contacts a {
-  color: #333;
+  color: #d6d6d6;
   font-weight: bold;
   transition: color 0.2s ease;
   display: inline-block;
@@ -54,7 +54,7 @@ img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 p {
-  color: #444;
+  color: #d6d6d6;
   font-size: 16px;
 }
 
@@ -63,10 +63,11 @@ h1 {
   margin-top: 0;
   margin-bottom: 4px;
   font-weight: 700;
+  color: #f0f0f0;
 }
 .job-title {
   font-size: 18px;
-  color: #777;
+  color: #aaaaaa;
   margin: 0;
   font-weight: 500;
 }
@@ -87,11 +88,14 @@ h2 {
 .skills li {
   margin-bottom: 10px;
   padding: 8px 12px;
-  background-color: #f5f5f5;
+  background-color: #333333;
   border-radius: 6px;
   transition: transform 0.2s ease;
-  border: 1px solid #eee;
+  border: 1px solid #444;
   position: relative;
+}
+.skills li strong {
+  color: #f0f0f0;
 }
 .skills li:hover {
   transform: translateX(5px);
@@ -127,18 +131,18 @@ h2 {
   margin: 20px auto;
   transition: box-shadow 0.3s ease;
   border-radius: 12px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   max-width: 900px;
-  background-color: white;
+  background-color: #2b2b2b;
   padding: 20px 40px 20px 40px;
 }
 .container:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
 }
 section {
   margin-bottom: 30px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #3a3a3a;
   padding-top: 5px;
 }
 .qualities {
@@ -148,7 +152,7 @@ section {
 }
 .qualities span {
   padding: 8px 14px;
-  background-color: #eef6fc;
+  background-color: #263b4a;
   color: #0077cc;
   border-radius: 20px;
   font-size: 14px;
@@ -159,14 +163,15 @@ section {
 }
 .qualities span:hover {
   transform: translateY(-2px);
-  background-color: #dceffc;
+  background-color: #304b5d;
 }
 .experience,
 .education {
   padding: 15px 20px;
   border-left: 4px solid #0077cc;
-  background-color: #f8f8f8;
+  background-color: #333333;
   border-radius: 0 8px 8px 0;
+  color: #eeeeee;
 }
 
 .experience,
@@ -187,7 +192,7 @@ section {
 }
 .experience .date {
   margin: 0 0 10px;
-  color: #777;
+  color: #aaaaaa;
   font-size: 14px;
   font-weight: 500;
   font-style: italic;
@@ -201,7 +206,7 @@ footer {
   color: #777;
   font-size: 14px;
   padding: 20px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #3a3a3a;
   margin-top: 20px;
 }
 
